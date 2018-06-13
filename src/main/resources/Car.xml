@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="car" class="com.dev.spring.core.Car">
+		<property name="model" value="Ryder"/>
+		<property name="brand" value="strt" />
+		<property name="type" value="ry"/>
+		<property name="engine" ref="start"/>
+	</bean>
+	
+	<bean id="start" class="com.dev.spring.core.StartEngine">
+	</bean>
+	
+	<bean id="stop" class="com.dev.spring.core.StopEngine"/>
+</beans>
