@@ -1,4 +1,4 @@
-package com.dev.spring.core;
+package com.dev.spring.core.java.config;
 
 
 public class SoftwareTester implements Job{
