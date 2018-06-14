@@ -8,10 +8,12 @@ public class TestEngine {
 
 	public static void main(String[] args) 
 	{
-		ApplicationContext context = 
+		AnnotationConfigApplicationContext context=
+		//ApplicationContext context = 
 				new AnnotationConfigApplicationContext(ConfigEngine.class);
 		Car c = context.getBean("car",Car.class);
 		c.getEngine().engine();
+		context.close();
 	}
 
 }

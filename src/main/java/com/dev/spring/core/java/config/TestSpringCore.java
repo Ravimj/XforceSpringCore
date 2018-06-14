@@ -8,9 +8,11 @@ public class TestSpringCore
 {
 	public static void main(String[] args) 
 	{
-		ApplicationContext context = 
+		//ApplicationContext context = 
+		AnnotationConfigApplicationContext context =
 				new AnnotationConfigApplicationContext(ConfigPerson.class);
 		Person p = context.getBean("person",Person.class);
 		p.getJob().doJob();
+		context.close();
 	}
 }

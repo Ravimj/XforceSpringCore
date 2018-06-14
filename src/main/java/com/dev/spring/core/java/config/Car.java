@@ -1,5 +1,9 @@
 package com.dev.spring.core.java.config;
 
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.ApplicationContext;
+
 public class Car
 {
 	private String model;
